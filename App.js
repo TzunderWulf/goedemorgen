@@ -3,7 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello!</Text>
+      <View style={styles.topBar}>
+        <Text style={styles.topBarText}>👋 Goedemorgen!</Text>
+        <Text style={styles.topBarSubText}>Mevrouw de Jong</Text>
+      </View>
     </View>
   );
 }
@@ -11,8 +14,24 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  topBar: {
+    backgroundColor: '#233D4D',
+    height: '20%',
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    paddingHorizontal: 30,
+  },
+  topBarText: {
+    fontSize: 34,
+    fontWeight: 'bold',
+    color: '#EFEFEF',
+  },
+  topBarSubText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#EFEFEF',
+  },  
 });
