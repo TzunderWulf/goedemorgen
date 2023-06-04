@@ -14,7 +14,7 @@ export default function Button({ text, icon, onPress, fullWidth }) {
 
 const styles = StyleSheet.create({
   button: {
-    width: '40%',
+    width: '39%',
     aspectRatio: 1,
     borderRadius: 10,
     paddingVertical: 15,
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
   },
   fullWidth: {
     width: '80%',
-    aspectRatio: 300 / 150,
+    aspectRatio: 290 / 150,
   }
 })
