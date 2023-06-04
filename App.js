@@ -1,13 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+import AppRoutes from './navigation/AppRoutes';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View style={styles.topBar}>
-        <Text style={styles.topBarText}>👋 Goedemorgen!</Text>
-        <Text style={styles.topBarSubText}>Mevrouw de Jong</Text>
-      </View>
-    </View>
+    <AppRoutes />
   );
 }
 
