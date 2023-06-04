@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 
-import TopBar from './components/TopBar';
-import TabButton from './components/TabButton';
+import TopBar from '../components/TopBar';
+import TabButton from '../components/TabButton';
 
 export default function HomeScreen({ navigation }) {
   return (
@@ -15,21 +15,25 @@ export default function HomeScreen({ navigation }) {
           <TabButton 
             fullWidth={true}
             text='Berichten'
-            icon='comments' />
+            icon='comments' 
+            onPress={() => { navigation.navigate('Messages') }} />
         </View>
         <View style={styles.rowButton}>
           <TabButton 
             text='Mijn Profiel'
-            icon='user' />
+            icon='user'
+            onPress={() => { navigation.navigate('Profile') }} />
           <TabButton 
             text='Hulp nodig?'
-            icon='question-circle' />
+            icon='question-circle'
+            onPress={() => { navigation.navigate('Help') }} />
         </View>
         <View>
           <TabButton 
             fullWidth={true}
             text='Instellingen'
-            icon='gear' />
+            icon='gear'
+            onPress={() => { navigation.navigate('Settings') }} />
         </View>
       </View>
     </View>
