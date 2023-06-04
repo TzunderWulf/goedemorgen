@@ -1,10 +1,13 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-import Button from '../components/Button'
+import Button from '../components/Button';
+import InputField from "../components/InputField";
 
 export default function LoginScreen({ navigation }) {
   return(
     <View style={styles.container}>
+      <InputField 
+        label='Gebruikersnaam' />
       <Button 
         text='Inloggen'
         icon='arrow-right'
