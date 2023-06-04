@@ -14,7 +14,7 @@ export default function Button({ text, icon, onPress, fullWidth }) {
 
 const styles = StyleSheet.create({
   button: {
-    width: '40%',
+    width: '44%',
     aspectRatio: 1,
     borderRadius: 10,
     paddingVertical: 15,
@@ -26,12 +26,12 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   buttonText: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#EFEFEF',
   },
   fullWidth: {
-    width: '80%',
-    aspectRatio: 300 / 150,
+    width: '90%',
+    aspectRatio: 280 / 130,
   }
 })
