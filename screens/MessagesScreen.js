@@ -1,9 +1,14 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function MessagesScreen() {
+import TopBar from "../components/TopBar";
+
+export default function MessagesScreen({ navigation }) {
   return(
     <View>
-      <Text>Messagesscreen</Text>
+      <TopBar 
+        screenTitle='Berichten'
+        onPress={() => { navigation.goBack() }}
+      />
     </View>
   );
 };

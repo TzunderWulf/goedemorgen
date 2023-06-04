@@ -1,9 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-export default function SplashScreen() {
+import TopBar from "../components/TopBar";
+
+export default function HelpScreen({ navigation}) {
   return(
     <View>
-      <Text>Helpscreen</Text>
+      <TopBar 
+        screenTitle='Hulp nodig?'
+        onPress={() => { navigation.goBack() }}
+      />
     </View>
   );
 };
