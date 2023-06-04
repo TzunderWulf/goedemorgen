@@ -1,12 +1,12 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 import TopBar from "../components/TopBar";
 
-export default function MessagesScreen({ navigation }) {
+export default function HelpScreen({ navigation}) {
   return(
     <View>
       <TopBar 
-        screenTitle='Berichten'
+        screenTitle='Hulp nodig?'
         onPress={() => { navigation.goBack() }}
       />
     </View>

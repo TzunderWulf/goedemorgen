@@ -1,9 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-export default function ProfileScreen() {
+import TopBar from "../components/TopBar";
+
+export default function ProfileScreen({ navigation }) {
   return(
     <View>
-      <Text>Profilescreen</Text>
+      <TopBar 
+        screenTitle='Mijn Profiel'
+        onPress={() => { navigation.goBack() }}
+      />
     </View>
   );
 };

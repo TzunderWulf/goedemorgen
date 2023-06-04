@@ -1,9 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-export default function SettingsScreen() {
+import TopBar from "../components/TopBar";
+
+export default function SettingsScreen({ navigation }) {
   return(
     <View>
-      <Text>Settingsscreen</Text>
+      <TopBar 
+        screenTitle='Instellingen'
+        onPress={() => { navigation.goBack() }}
+      />
     </View>
   );
 };
