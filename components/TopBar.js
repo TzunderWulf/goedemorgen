@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function TopBar({goBack = true, screenTitle, onPress}) {
+export default function TopBar({goBack = true, screenTitle, onPress, username}) {
   return (
     <View style={styles.topBar}>
       { goBack ? 
@@ -16,7 +16,7 @@ export default function TopBar({goBack = true, screenTitle, onPress}) {
         (
           <View>
             <Text style={styles.topBarText}>👋 Goedemorgen!</Text>
-            <Text style={styles.topBarSubText}>Mevrouw de Jong</Text>
+            <Text style={styles.topBarSubText}>{username}</Text>
           </View>
         )
       }
