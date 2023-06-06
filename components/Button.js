@@ -14,7 +14,7 @@ export default function Button({ text, color='primary', icon, onPress }) {
 
 const styles = StyleSheet.create({
   button: {
-    width: '90%',
+    width: '100%',
     borderRadius: 10,
     paddingVertical: 15,
     paddingHorizontal: 30,
