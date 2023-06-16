@@ -8,6 +8,7 @@ import MessagesScreen from '../screens/MessagesScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import HelpScreen from '../screens/HelpScreen';
+import CommunityScreen from '../screens/CommunityScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ export default function AppRoutes() {
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Help" component={HelpScreen} />
+        <Stack.Screen name="Community" component={CommunityScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

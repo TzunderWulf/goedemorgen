@@ -1,11 +1,11 @@
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 import TopBar from '../components/TopBar';
 import TabButton from '../components/TabButton';
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <TopBar 
         goBack={false}
         username='Mevrouw de Jong'
@@ -35,8 +35,15 @@ export default function HomeScreen({ navigation }) {
             icon='gear'
             onPress={() => { navigation.navigate('Settings') }} />
         </View>
+        <View>
+          <TabButton 
+            fullWidth={true}
+            text='Mijn Buurt'
+            icon='group'
+            onPress={() => { navigation.navigate('Community') }} />
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
