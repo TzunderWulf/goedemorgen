@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: '#233D4D',
     backgroundColor: '#EFEFEF',
-    color: '#OEOEOE',
+    color: 'black',
   },
   label: {
     fontWeight: 'bold',
