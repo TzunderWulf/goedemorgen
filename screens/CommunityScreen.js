@@ -2,11 +2,11 @@ import { View, Text, StyleSheet } from "react-native";
 
 import TopBar from "../components/TopBar";
 
-export default function MessagesScreen({ navigation }) {
+export default function CommunityScreen({ navigation }) {
   return(
     <View>
       <TopBar 
-        screenTitle='Berichten'
+        screenTitle='Mijn buurt'
         onPress={() => { navigation.goBack() }}
       />
     </View>
