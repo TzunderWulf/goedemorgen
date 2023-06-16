@@ -1,14 +1,15 @@
 import { View, TextInput, Text, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function InputField({ label, password }) {
+export default function InputField({ label, password, inputType }) {
   return(
     <View style={styles.inputField}>
       <Text style={styles.label}>{ label }</Text>
       <TextInput
         style={styles.input}
         placeholder={label}
-        secureTextEntry={password} />
+        secureTextEntry={password}
+        keyboardType={inputType}/>
     </View>
   );
 };

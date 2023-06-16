@@ -7,7 +7,8 @@ export default function LoginScreen({ navigation }) {
   return(
     <View style={styles.container}>
       <InputField 
-        label='Gebruikersnaam' />
+        label='Telefoonnummer'
+        inputType='phone-pad' />
       <InputField 
         label='Wachtwoord' 
         password={true} />
