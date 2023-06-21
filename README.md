@@ -30,3 +30,14 @@ Three folders are managed for this:
 * **Localization**: in this folder all the language and locatization files are stored. For each locale, create a file.Inside define an object then maintain the nesting sorted by the screen that contains the text that you need and the text you want to show. 
 * **Components**: in this folder all the compontents are stored, things like buttons, inputs and headings.
 * **Screens**: folder to contain all screens within the application.
+
+## Contribution
+If you feel like contributing, please open a issue with your addition.
+
+### How to contribute
+Once your issue is accepted, do the following steps:
+* Fork the project on Github
+* Install development dependencies
+* Create a topic branch for your changes
+* Ensure that you provide documentatio (patches won't be accepted without)
+* Create a pull request on Github (these are also a great place to start a conversation around a patch as early as possible)
